@@ -1,4 +1,6 @@
-/* GLOBAL */
+/* /* GLOBAL  */
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap);
+
 
 * {
   box-sizing: border-box;
@@ -16,9 +18,120 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #fff;
+  color: #4a4b4c;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ /* CONTAINER  */
+
+.container{
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* SITE-HEADER-TOP */
+.site-header-top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+}
+.site-header-top-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo {
+  display: flex;
+  padding: 8px 6px;
+  margin-right: 35px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.site-header-logo:hover{
+  opacity: 0.8;
+}
+
+.site-header-logo:active{
+  opacity: 0.8;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  border-radius: 10px;
+  padding: 13px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-primary{
+  background-color: #7296ec;
+  color: #fff;
+}
+
+.button-primary:hover{
+  opacity: 0.8;
+}
+
+.button-primary:active{
+  opacity: 0.6;
+}
+
+/* CURRENSY-RATES */
+.currency-rates {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.currency-rates-type {
+  color: #2959ce;
+}
+
+.currency-rates-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+/* LANG-TOGGLE */
+.lang-toggle {
+  display: flex;
+  padding: 3px;
+  margin-right: 25px;
+  border-radius: 39px;
+  background-color: #dce6ff;
+}
+
+.lang-toggle-link {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  line-height: 30px;
+  color: #a6a6a6;
+}
+
+.lang-toggle-link.lang-toggle-link-active {
+  background-color: #fff;
+  color: #000;
 }
