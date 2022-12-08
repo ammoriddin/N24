@@ -1,14 +1,18 @@
 /* /* GLOBAL  */
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap);
 
-
-* {
-  box-sizing: border-box;
+:root {
+  --acctent-color: #7296ec;
 }
 
 html{
+  box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 body {
@@ -77,7 +81,7 @@ img {
 
 /* OUTLINE-STYLES */
 *:focus{
-  outline: 2px dashed #7296ec;
+  outline: 2px dashed var(--acctent-color);
   outline-offset: 3px;
 }
 
@@ -97,7 +101,7 @@ img {
 }
 
 .button-primary{
-  background-color: #7296ec;
+  background-color: var(--acctent-color);
   color: #fff;
 }
 
@@ -220,7 +224,7 @@ img {
 }
 
 .sitenav-link:hover{
-  color: #7296ec;
+  color: var(--acctent-color);
 }
 
 .sitenav-link:active{
@@ -402,7 +406,7 @@ img {
 }
 
 .article-card-horizontal-link:hover {
-  color: #7296ec; 
+  color: var(--acctent-color); 
 }
 
 .article-card-horizontal-link:active {
@@ -517,7 +521,7 @@ img {
 }
 
 .sidebar-news-card-link:hover {
-  color: #7296ec; 
+  color: var(--acctent-color); 
 }
 
 .sidebar-news-card-link:active {
@@ -548,7 +552,7 @@ img {
 .site-footer{
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #7296ec;
+  background-color: var(--acctent-color);
   color: #fff;
 }
 
